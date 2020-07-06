@@ -1,0 +1,74 @@
+@import 'scss/vars';
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'scss/header';
+@import 'scss/cards';
+@import 'scss/section';
+@import 'scss/menu';
+@import 'scss/stars';
+@import 'scss/statistics';
+
+body {
+    font-family: 'Nunito', sans-serif;
+    // background-color: rgb(255, 230, 194);
+    // // background-color: rgb(194, 208, 255);
+}
+
+.body-play {
+    background-color: rgb(194, 208, 255);
+}
+
+.body-train {
+    background-color: rgb(255, 230, 194);
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.result-img-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+// .failure {
+//     margin: 0;
+//     background-repeat: no-repeat;
+//     background-position: center 180px;
+//     overflow-x: hidden;
+//     background-color: white;
+//     background: url(../src/assets/img/failure.jpg) center no-repeat;
+//     padding-top: 60%;
+// }
+
+.failure-img, .success-img {
+    width: 30rem;
+    object-fit: cover;
+}
+
+// .success {
+//     margin: 0;
+//     background-repeat: no-repeat;
+//     background-position: center 180px;
+//     overflow-x: hidden;
+//     background-color: white;
+//     background: url(../src/assets/img/success.jpg) center no-repeat;
+//     padding-top: 60%;
+// }
+
+.result-text {
+    font-weight: 700;
+    text-align: center;
+    color: $purple-color;
+    font-size: 2.1rem;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}

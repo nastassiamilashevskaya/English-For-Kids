@@ -1,0 +1,136 @@
+.section-card {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    overflow: hidden;
+    text-decoration: none;
+    padding-bottom: 1rem;
+
+    &:after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: red;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        z-index: 1;
+        transition: width .2s linear;
+    }    
+
+
+    &-img {
+        width: 15rem;
+        height: 15rem;
+        object-fit: cover;
+        border: 4px $orange-color solid;
+        border-radius: 50%;
+        transition: box-shadow 0.3s linear;
+
+        &:hover {
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);    
+        }    
+
+        &-actionA {
+            border: 4px $actionA-color solid;
+        }
+        &-actionB {
+            border: 4px $actionB-color solid;
+        }
+        &-animalA {
+            border: 4px $animalA-color solid;
+        }
+        &-animalB {
+            border: 4px $animalB-color solid;
+        }
+        &-clothes {
+            border: 4px $clothes-color solid;
+        }
+        &-emotions {
+            border: 4px $emotions-color solid;
+        }
+        &-fruit {
+            border: 4px $fruit-color solid;
+        }
+        &-transport {
+            border: 4px $transport-color solid;
+        }
+        &-replay {
+            border: 4px $purple-color solid;
+        }
+
+    }
+
+    &-text {
+        font-weight: 700;
+        text-align: center;
+        color: $purple-color;
+        font-size: 1.7rem;
+        text-decoration: none;
+    }
+}
+
+.content-center {
+    display: flex;
+    justify-content: center;
+}
+
+.section-title {
+    font-weight: 700;
+    text-align: center;
+    color: $purple-color;
+    font-size: 2.1rem;
+    text-decoration: none;
+    // padding-left: 7rem;
+
+    @media (max-width: 450px) {
+        font-size: 1.6rem;
+    }
+    @media (max-width: 380px) {
+        font-size: 1.3rem;
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-warning {
+    border-radius: 1.65rem;
+    background-color: $orange-color;
+    border: none;
+    font-weight: 700;
+    color: $purple-color;
+    font-size: 2rem;
+    width: 20rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    &:hover {
+        background-color: rgba($purple-color, 0.9);
+    }
+
+    &-repeat {
+        width: 15rem;
+    }
+
+    &-replay {
+        font-size: 1.3rem;
+        width: 16rem;
+        margin-top: 1rem;
+    }
+
+    &-reset {
+        font-size: 1.3rem;
+        width: 6.7rem;
+        margin-top: 1rem;
+    }
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

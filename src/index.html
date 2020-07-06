@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <title>English for kids</title>
+</head>
+<body id="body" class="body-train">
+  <div id="result-container" class="result-img-container hidden">
+  </div>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+          <div class="col-4">
+            <img id="menu-img" class="menu-img" src="../src/assets/img/menu.svg" alt="">
+            <nav id="menu" class="menu menu-hidden">
+              <a id="mainPage" href="#mainPage" class="menu-link active-link">Main Page</a>
+              <a id="actionA" href="#actionA" class="menu-link menu-link-actionA">Action (set A)</a>
+              <a id="actionB" href="#actionB" class="menu-link menu-link-actionB">Action (set B)</a>
+              <a id="animalA" href="#animalA" class="menu-link menu-link-animalA">Animal (set A)</a>
+              <a id="animalB" href="#animalB" class="menu-link menu-link-animalB">Animal (set B)</a>
+              <a id="clothes" href="#clothes" class="menu-link menu-link-clothes">Clothes</a>
+              <a id="emotions" href="#emotions" class="menu-link menu-link-emotions">Emotions</a>
+              <a id="fruit" href="#fruit" class="menu-link menu-link-fruit">Fruit</a>
+              <a id="transport" href="#transport" class="menu-link menu-link-transport">Transport</a>
+              <a id="statistics" href="#statistics" class="menu-link menu-link-statistics">Statistics</a>
+          </nav>    
+          </div>
+          <div id="section-title" class="col-4 section-title">English For Kids</div>
+          <div id="switch-container" class="col-4">
+            <input type="checkbox" id="switch" />
+            <label for="switch" class="train">Train</label>
+          </div>
+        </div>
+    </div>
+  </header>
+  <section id="section" class="section">
+    <div id="buttons-container" class="container buttons-container hidden">
+      <button id="replay-button" type="button" class="btn btn-warning btn-warning-replay">Repeat difficult words</button>
+      <button id="reset-button" type="button" class="btn btn-warning btn-warning-reset">Reset</button>  
+    </div>
+    <div id="table-container" class="container table-responsive justify-content-between hidden"></div>
+    <div id="container" class="container justify-content-between">
+      <div id="stars-container" class="stars-container hidden">
+      </div>
+      <div id="firstRow" class="row justify-content-between">
+        <div class="col-12 col-sm-6 col-lg-3 no-padding content-center">
+          <a href="#" class="section-card">
+            <img class="section-card-img section-card-img-actionA" src="../src/assets/img/draw.jpg" alt="">
+            <div class="section-card-text">Action (set A)</div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3  no-padding content-center">
+          <a href="#" class="section-card">
+            <img class="section-card-img section-card-img-actionB" src="../src/assets/img/run.jpg" alt="">
+            <div class="section-card-text">Action (set B)</div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3  no-padding content-center">
+          <a href="#" class="section-card">
+            <img class="section-card-img section-card-img-animalA" src="../src/assets/img/cat.jpg" alt="">
+            <div class="section-card-text">Animal (set A)</div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3  no-padding content-center">
+          <a href="#" class="section-card">
+            <img class="section-card-img section-card-img-animalB" src="../src/assets/img/bird.jpg" alt="">
+            <div class="section-card-text">Animal (set B)</div>
+          </a>
+        </div>
+      </div>
+      <div class="row justify-content-between" id="secondRow">
+        <div class="col-12 col-sm-6 col-lg-3  no-padding content-center">
+          <a href="#" class="section-card">
+            <img class="section-card-img section-card-img-clothes" src="../src/assets/img/skirt.jpg" alt="">
+            <div class="section-card-text">Clothes</div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3  no-padding content-center">
+          <a href="#" class="section-card">
+            <img class="section-card-img section-card-img-emotions" src="../src/assets/img/happy.jpg" alt="">
+            <div class="section-card-text">Emotions</div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3  no-padding content-center">
+          <a href="#" class="section-card">
+            <img class="section-card-img section-card-img-fruit" src="../src/assets/img/apple.jpg" alt="">
+            <div class="section-card-text">Fruit</div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3  no-padding content-center">
+          <a href="#" class="section-card">
+            <img class="section-card-img section-card-img-transport" src="../src/assets/img/train.jpg" alt="">
+            <div class="section-card-text">Transport</div>
+          </a>
+        </div>
+      </div>
+      <div class="button-container">
+        <button id="play-button" type="button" class="btn btn-warning hidden">Start game</button>
+        <button id="repeat-button" type="button" class="btn btn-warning btn-warning-repeat hidden">Repeat</button>
+      </div>
+    </div>  
+  </section>
+</body>
+</html>
